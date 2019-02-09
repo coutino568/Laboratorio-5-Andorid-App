@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".newContactActivity">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/newContactEmail"
+            android:contentDescription="Instert your Email address"
+            android:hint="Enter Contact's E-mail"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.657"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/newContactNumber"
+            android:contentDescription="Enter your phone number"
+            android:hint="Enter contact's Number"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/newContactEmail" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/newContactName" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/newContactName"
+            android:hint="Enter contact's Name"
+            android:layout_marginTop="44dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="ADD NEW CONTACT"
+            android:layout_width="194dp"
+            android:layout_height="39dp"
+            android:id="@+id/textView" android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:text="Go Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton" android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/newContactEmail" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="72dp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toBottomOf="@+id/newContactEmail" />
+</android.support.constraint.ConstraintLayout>
